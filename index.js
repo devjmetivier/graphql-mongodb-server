@@ -34,7 +34,7 @@ import { GraphQLServer } from 'graphql-yoga';
 import mongoose from 'mongoose';
 
 import typeDefs from './schema/index';
-import resolvers from './resolvers';
+import resolvers from './resolvers/index';
 
 // Models
 import User from './models/User';

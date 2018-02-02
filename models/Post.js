@@ -4,6 +4,14 @@ import mongodbErrorHandler from 'mongoose-mongodb-errors';
 const { Schema } = mongoose;
 
 const postSchema = new Schema({
+    author: {
+        type: String,
+        trim: true,
+    },
+    title: {
+        type: String,
+        trim: true,
+    },
     createdAt: {
         type: Date,
         default: Date.now(),
